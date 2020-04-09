@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: admin
+    url: jdbc:mysql://192.168.1.22:3306/db_freezer?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&tinyInt1isBit=false&useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 180000
+server:
+  port: 8299
