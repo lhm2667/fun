@@ -1,4 +1,4 @@
-package com.lhm.self.fun.dynamicproxy.domain;
+package com.lhm.self.fun.rabbitAdmin;
 
 import java.io.Serializable;
 
@@ -6,12 +6,12 @@ import java.io.Serializable;
  * @author lihaiming
  * @ClassName: Cat
  * @Description: TODO
- * @date 2020/4/1010:04
+ * @date 2020/4/1517:18
  */
-public class Cat implements Animal , Serializable {
-
-    private int age;
-    private String name;
+public class Cat  implements Serializable {
+    private static final long serialVersionUID = 1L;
+    int age;
+    String name;
 
     public int getAge() {
         return age;
@@ -27,14 +27,5 @@ public class Cat implements Animal , Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public void call() {
-        System.out.println("喵喵喵 ~");
-    }
-
-    public void hobby(){
-        System.out.println("fish ~");
     }
 }
